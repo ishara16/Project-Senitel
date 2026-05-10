@@ -1,5 +1,4 @@
 {
-  "status": "healthy",
-  "uptime": "100%",
-  "lastCheck": "2026-05-11T10:00:00Z"
+  "status": "CRITICAL",
+  "lastUpdated": "2026-05-10T19:29:20.979Z"
 }
