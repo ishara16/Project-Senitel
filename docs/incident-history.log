@@ -1,3 +1,21 @@
 [2026-05-11T11:00:00Z] STATUS: Preparing for Chaos Engineering Cycle 02.
 Observation: All systems currently HEALTHY.
 Goal: Verify autonomous recovery and regression testing pipeline.
+
+[2026-05-11T11:05:00Z] INCIDENT: Auth-Service Syntax Failure
+Severity: Critical
+Cause: Chaos Monkey injected invalid variable naming in services/auth-service/index.js.
+Resolution: Subagent Alpha identified the syntax error; Subagent Beta implemented a structural regression test and verified fix.
+Status: RESOLVED
+
+[2026-05-11T11:15:00Z] INCIDENT: Inventory-Service Memory Leak
+Severity: High
+Cause: Unclosed database connections in services/inventory-service/db.ts.
+Resolution: Subagent Alpha traced leak via heap dump analysis; Main Agent coordinated fix; Subagent Beta added load test regression.
+Status: RESOLVED
+
+[2026-05-11T11:30:00Z] INCIDENT: API Gateway Timeout (Cascading)
+Severity: Medium
+Cause: Timeout mismatch between frontend and backend microservices.
+Resolution: Aligned timeout settings across services; updated health check logic.
+Status: RESOLVED

@@ -7,6 +7,13 @@ Project Sentinel is a monorepo containing a Next.js frontend, Node.js microservi
 - Frontend: Next.js (TypeScript)
 - Services: Node.js (TypeScript)
 - Scripts: Node.js/Bash
+- Integrations: SQLite MCP for persistent state and context management
+
+## Multi-Agent Orchestration
+The project utilizes a multi-agent system for complex task resolution:
+- **Main Agent**: Coordinates overall strategy and high-level planning.
+- **Subagent Alpha (Debugger)**: Specializes in root cause analysis and bug isolation.
+- **Subagent Beta (QA)**: Focuses on verification, regression testing, and quality assurance.
 
 ## Development Guidelines
 
