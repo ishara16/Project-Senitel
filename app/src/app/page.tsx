@@ -75,8 +75,8 @@ export default async function Home() {
                 <div className="flex justify-between items-start mb-4">
                   <span className="text-zinc-400 font-mono text-sm uppercase">{name.replace("-service", "")}</span>
                   <div className={`px-2 py-1 rounded text-xs font-bold uppercase ${
-                    data.status === "healthy" ? "bg-green-500/10 text-green-500" :
-                    data.status === "degraded" ? "bg-yellow-500/10 text-yellow-500" : "bg-red-500/10 text-red-500"
+                    data.status?.toLowerCase() === "healthy" ? "bg-green-500/10 text-green-500" :
+                    data.status?.toLowerCase() === "degraded" ? "bg-yellow-500/10 text-yellow-500" : "bg-red-500/10 text-red-500"
                   }`}>
                     {data.status}
                   </div>

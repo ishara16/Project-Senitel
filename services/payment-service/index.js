@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 const port = 3002;
-const status = "HEALTHY";
+const status = 'HEALTHY';
 const logFile = path.join(__dirname, 'logs', 'error.log');
 
 app.get('/health', (req, res) => {
